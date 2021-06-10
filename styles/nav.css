@@ -1,0 +1,131 @@
+ /* find the left column and use the child element of contact hours to be styled */
+/* left column styles */
+.navigation-wrapper >.left-column >.contact-hours-wrapper >.icon {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    align-items: center;
+    justify-content: center;
+}
+   
+ .left-column > .contact-hours-wrapper{
+     display: grid;
+     grid-template-columns: 1fr;
+     /* grid gap allows us to put space in between items instead of messing with margins */
+     grid-gap: 10px;
+ }
+ .navigation-wrapper >.left-column > .contact-hours-wrapper > .hours {
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    color: #858585;
+    font-size: 0.8em;
+ }
+ .navigation-wrapper >.left-column > .contact-hours-wrapper > .phone {
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    color: #858585;
+    font-size: 0.8em;
+ }
+ /* common nav styles */
+ .navigation-wrapper{
+     /* everthing is made up of a pixel=px */
+        height: 190px;
+        background-color: #11122B;
+        color: #CBCBCB;
+        /* this is now making this a flexbox container */
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 60px 100px;
+        }
+
+.navigation-wrapper > .left-column > .icon{
+     margin-right: 15px;
+ }
+.navigation-wrapper > .left-column > .icon i {
+     font-size: 2em;
+ }
+ 
+.nav-link > a {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}    
+  /* center column styles */
+.navigation-wrapper > .center-column {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 42px;
+    width: 500px;
+}
+
+.banner-img {
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-wrapper  > .center-column > .banner-img img {
+    width: 216px;
+    height: 100%;
+}
+
+.links-wrapper > .nav-link a{
+    font-family: 'Ubuntu Condensed', sans-serif;
+    color: white;
+}
+
+.links-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.address-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+.links-wrapper > .nav-link {
+    width: 70px;
+    text-align: center;
+}
+
+ .links-wrapper > .nav-link a {
+     font-family: 'Ubuntu Condensed', sans-serif;
+     color: #CBCBCB;
+     text-decoration: none;
+     transition: 0.5s;
+ }
+ .links-wrapper > .nav-link a:hover{
+     color:#cea135;
+     letter-spacing: 2px;
+ }
+ /* right column styles */
+ .navigation-wrapper > .right-column {
+    display: flex;
+    align-items: center;
+}
+
+.navigation-wrapper > .right-column > .address-wrapper {
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+.navigation-wrapper > .right-column > .address-wrapper a {
+    color: #858585;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: 0.5s;
+}
+.navigation-wrapper > .right-column > .contact-icon {
+    margin-left: 15px;
+    font-size: 2em;
+    
+}
+
+.navigation-wrapper > .right-column > .address-wrapper a:hover {
+    color: #cea135;
+}
+.navigation-wrapper > .right-column > .contact-icon a {
+    color: #cbcbcb;
+}
+
+.navigation-wrapper > .right-column > .contact-icon a:hover {
+    color: #cea135;
+}

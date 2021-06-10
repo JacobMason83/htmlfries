@@ -1,0 +1,15 @@
+
+/*  page container styles*/
+.page-container{
+    display: flex;
+    justify-content: center;
+ }
+ .page-container > .content-wrapper{
+    width: 1000px;
+ }
+ .page-container > .content-wrapper > #chef{
+    width: 350px;
+    margin: 23px;
+    float: left;
+    border: 2px whitesmoke;
+ }
